@@ -1,0 +1,101 @@
+#root{
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+line-height: 1.5;
+font-weight: 400;
+
+color-scheme: light dark;
+color: rgba(255, 255, 255, 0.87);
+background-color: #242424;
+
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+width: 100%;
+height: 100vh;
+
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/*상단바 만들기*/
+.top_bar {
+  background-color:#df3598; /*background: -color은 색상만 지정, 아닐 경우엔 color이외의 다른 옵션들 까지 지정*/
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  top: 0;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: #493c19;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between; /*항목들을 고르게 정렬. 첫 항목은 시작부분에 밀착 정렬, 마지막 항목은 끝 부분에 밀착 정렬*/
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.menu{
+  background-color: #f1b4d8;
+  width: 300px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  position: absolute;
+  z-index: 10;
+ }
+
+ .nicknameDiv{
+    background-color: #760f4b;
+    height: 50px;
+  }
+
+.main{
+  background-color: #f1b4d8;
+  width: 100%;
+  height: 100%;
+}
+
+.search{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  left: 0;
+  top: 200px; 
+  text-align: -webkit-center;
+}
